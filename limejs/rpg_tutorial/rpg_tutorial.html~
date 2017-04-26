@@ -7,6 +7,6 @@
 	<script type="text/javascript" src="rpg_tutorial.js"></script>
 </head>
 
-<body style="background-color: black;" onload="rpg_tutorial.start()"></body>
+<body color="black" onload="rpg_tutorial.start()"></body>
 
 </html>
