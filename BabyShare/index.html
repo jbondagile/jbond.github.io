@@ -46,73 +46,127 @@
     </div>
 
     <div class="outside container">
-        <div class="submitting col-md-6">
-            <p>Click here to submit info</p>
+        <div class="submitting col-md-12">
+            <p>Submit</p>
             <div class='inside'>
-                <div class='nap col-md-3'>
-                    <p>Click here to submit a nap</p>
+                <div class='nap col-md-12'>
+                    <p>Nap</p>
                     <div class='inside'>
                         <form class='form-horizontal'>
                             <div class="form-group">
-                                <label for="napStartTime" class="col-sm-2 control-label">Start Time</label>
-                                <div class="col-sm-8">
+                                <label for="napStartTime" class="col-sm-3 control-label">Start Time</label>
+                                <div class="col-sm-7">
                                     <input type="startTime" class="form-control" id="napStartTime" placeholder="Start Time">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="napEndTime" class="col-sm-2 control-label">End Time</label>
-                                <div class="col-sm-8">
+                                <label for="napEndTime" class="col-sm-3 control-label">End Time</label>
+                                <div class="col-sm-7">
                                     <input type="endTime" class="form-control" id="napEndTime" placeholder="End Time">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default">Submit</button>
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onclick="saveNap()">Submit</button>
                                 </div>
                           </div>
                         </form>
                     </div>
                 </div>
-                <div class='play col-md-3'>
-                    <p>Click here to submit play time</p>
+                <div class='play col-md-12'>
+                    <p>Play Time</p>
                     <div class='inside'>
                         <form class='form-horizontal'>
                             <div class="form-group">
-                                <label for="napStartTime" class="col-sm-2 control-label">Play Notes</label>
-                                <div class="col-sm-8">
+                                <label for="napStartTime" class="col-sm-3 control-label">Play Notes</label>
+                                <div class="col-sm-7">
                                     <textarea type="startTime" class="form-control" id="napStartTime" placeholder="Play Notes"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default">Submit</button>
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onclick="savePlay()">Submit</button>
                                 </div>
                           </div>
                         </form>
                     </div>
                 </div>
-                <div class='eat col-md-3'>
-                    <p>Click here to submit a meal</p>
+                <div class='eat col-md-12'>
+                    <p>Meal</p>
+                    <div class='inside'>
+                        <form class='form-horizontal'>
+                            <div class="form-group">
+                                <label for="eating" class="col-sm-3 control-label">Food Eaten</label>
+                                <div class="col-sm-7">
+                                    <input type="foodType" class="form-control" id="foodType" placeholder="Food Eaten">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="eating" class="col-sm-3 control-label">Amount Eaten</label>
+                                <div class="col-sm-7">
+                                    <input type="howMuchEaten" class="form-control" id="howMuchEatan" placeholder="Amount Eaten">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onclick="saveMeal()">Submit</button>
+                                </div>
+                          </div>
+                        </form>
+                    </div>
                 </div>
-                <div class='diaper col-md-3'>
-                    <p>Click here to submit a diaper change</p>
+                <div class='diaper col-md-12'>
+                    <p>Diaper Change</p>
+                    <div class='inside'>
+                        <form class='form-horizontal'>
+                            <div class="form-group">
+                                <label for="dry" class="col-sm-3 control-label">Dry</label>
+                                <div class="checkbox col-sm-7">
+                                    <input type="checkbox">           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="wet" class="col-sm-3 control-label">Wet</label>
+                                <div class="checkbox col-sm-7">
+                                    <input type="checkbox">           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="soft" class="col-sm-3 control-label">Soft</label>
+                                <div class="checkbox col-sm-7">
+                                    <input type="checkbox">           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="normal" class="col-sm-3 control-label">Normal</label>
+                                <div class="checkbox col-sm-7">
+                                    <input type="checkbox">           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onclick="saveDiaper()">Submit</button>
+                                </div>
+                          </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="checking col-md-6">
-            <p>Click here to check info</p>
+        <div class="checking col-md-12">
+            <p>Check</p>
             <div class='inside'>
-                <div class='nap col-md-3'>
-                    <p>Click here to check naps</p>
+                <div class='nap col-md-12'>
+                    <p>Naps</p>
                 </div>
-                <div class='play col-md-3'>
-                    <p>Click here to check play times</p>
+                <div class='play col-md-12'>
+                    <p>Play Times</p>
                 </div>
-                <div class='eat col-md-3'>
-                    <p>Click here to check meals</p>
+                <div class='eat col-md-12'>
+                    <p>Meals</p>
                 </div>
-                <div class='diaper col-md-3'>
-                    <p>Click here to check diaper changes</p>
+                <div class='diaper col-md-12'>
+                    <p>Diaper Changes</p>
                 </div>
             </div>
         </div>
