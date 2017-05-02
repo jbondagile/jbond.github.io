@@ -11,7 +11,9 @@
 .inside {
 	display: none;
 }
-
+.verify, .error {
+	display: none;
+}
 
 
 

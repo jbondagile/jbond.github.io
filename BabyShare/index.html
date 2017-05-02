@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- Include the Back& SDK -->
+        <script type="text/javascript" src="https://cdn.backand.net/vanilla-sdk/1.1.2/backand.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -67,10 +70,14 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="submit" class="btn btn-default" onclick="saveNap()">Submit</button>
+                                    <button type="button" class="btn btn-default" onclick="saveNap()">Submit</button>
                                 </div>
                           </div>
                         </form>
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <p class='verify'>Data was submitted</p>
+                            <p class='error'>Error, data was not submitted</p>
+                        </div>
                     </div>
                 </div>
                 <div class='play col-md-12'>
@@ -78,17 +85,21 @@
                     <div class='inside'>
                         <form class='form-horizontal'>
                             <div class="form-group">
-                                <label for="napStartTime" class="col-sm-3 control-label">Play Notes</label>
+                                <label for="playTime" class="col-sm-3 control-label">Play Notes</label>
                                 <div class="col-sm-7">
-                                    <textarea type="startTime" class="form-control" id="napStartTime" placeholder="Play Notes"></textarea>
+                                    <textarea type="play" class="form-control" id="playTime" placeholder="Play Notes"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="submit" class="btn btn-default" onclick="savePlay()">Submit</button>
+                                    <button type="button" class="btn btn-default" onclick="savePlay()">Submit</button>
                                 </div>
                           </div>
                         </form>
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <p class='verify'>Data was submitted</p>
+                            <p class='error'>Error, data was not submitted</p>
+                        </div>
                     </div>
                 </div>
                 <div class='eat col-md-12'>
@@ -104,15 +115,19 @@
                             <div class="form-group">
                                 <label for="eating" class="col-sm-3 control-label">Amount Eaten</label>
                                 <div class="col-sm-7">
-                                    <input type="howMuchEaten" class="form-control" id="howMuchEatan" placeholder="Amount Eaten">
+                                    <input type="howMuchEaten" class="form-control" id="howMuchEaten" placeholder="Amount Eaten">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="submit" class="btn btn-default" onclick="saveMeal()">Submit</button>
+                                    <button type="button" class="btn btn-default" onclick="saveMeal()">Submit</button>
                                 </div>
                           </div>
                         </form>
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <p class='verify'>Data was submitted</p>
+                            <p class='error'>Error, data was not submitted</p>
+                        </div>
                     </div>
                 </div>
                 <div class='diaper col-md-12'>
@@ -122,33 +137,37 @@
                             <div class="form-group">
                                 <label for="dry" class="col-sm-3 control-label">Dry</label>
                                 <div class="checkbox col-sm-7">
-                                    <input type="checkbox">           
+                                    <input type="checkbox" id="dry">           
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="wet" class="col-sm-3 control-label">Wet</label>
                                 <div class="checkbox col-sm-7">
-                                    <input type="checkbox">           
+                                    <input type="checkbox" id="wet">           
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="soft" class="col-sm-3 control-label">Soft</label>
                                 <div class="checkbox col-sm-7">
-                                    <input type="checkbox">           
+                                    <input type="checkbox" id="soft">           
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="normal" class="col-sm-3 control-label">Normal</label>
                                 <div class="checkbox col-sm-7">
-                                    <input type="checkbox">           
+                                    <input type="checkbox" id="normal">           
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="submit" class="btn btn-default" onclick="saveDiaper()">Submit</button>
+                                    <button type="button" class="btn btn-default" onclick="saveDiaper()">Submit</button>
                                 </div>
-                          </div>
+                            </div>
                         </form>
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <p class='verify'>Data was submitted</p>
+                            <p class='error'>Error, data was not submitted</p>
+                        </div>
                     </div>
                 </div>
             </div>
