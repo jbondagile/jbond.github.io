@@ -18,10 +18,11 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
         <!-- Include the Back& SDK -->
-        <script type="text/javascript" src="https://cdn.backand.net/vanilla-sdk/1.1.2/backand.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -70,7 +71,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="button" class="btn btn-default" onclick="saveNap()">Submit</button>
+                                    <button type="button" class="btn btn-default" id="saveNap">Submit</button>
                                 </div>
                           </div>
                         </form>
@@ -92,7 +93,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="button" class="btn btn-default" onclick="savePlay()">Submit</button>
+                                    <button type="button" class="btn btn-default" id="savePlay">Submit</button>
                                 </div>
                           </div>
                         </form>
@@ -120,7 +121,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="button" class="btn btn-default" onclick="saveMeal()">Submit</button>
+                                    <button type="button" class="btn btn-default" id="saveMeal">Submit</button>
                                 </div>
                           </div>
                         </form>
@@ -160,7 +161,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-10">
-                                    <button type="button" class="btn btn-default" onclick="saveDiaper()">Submit</button>
+                                    <button type="button" class="btn btn-default" id="saveDiaper">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -236,7 +237,8 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script type="text/javascript" src="https://cdn.backand.net/vanilla-sdk/1.1.2/backand.min.js"></script>
+        <script src="js/game.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -247,5 +249,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
     </body>
 </html>
